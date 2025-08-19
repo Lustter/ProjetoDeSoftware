@@ -1,24 +1,19 @@
-package entidades;
-
-public class Livro{
-    public String titulo;
-    public String autor;
+public class Roupas {
+    public String marca;
+    public String tipo;
+    public String tamanho;
     public int quantidade;
     public double valor;
 
-    public Livro(String titulo, String autor, int quantidade, double valor) {
-        this.titulo = titulo;
-        this.autor = autor;
+    public Roupas(String marca, String tipo, String tamanho, int quantidade, double valor) {
+        this.marca = marca;
+        this.tipo = tipo;
+        this.tamanho = tamanho;
         this.quantidade = quantidade;
         this.valor = valor;
     }
 
-    public Livro(String titulo, String autor) {
-        this.titulo = titulo;
-        this.autor = autor;
-    }
-
-    public void emprestarLivro(int quantidade) {
+    public void decrementarRoupa(int quantidade) {
         if (quantidade > 0 && quantidade <= this.quantidade) {
             this.quantidade = this.quantidade - quantidade;
         } else {
@@ -26,7 +21,7 @@ public class Livro{
         }
     }
 
-    public void recebeLivro(int quantidade) {
+    public void incrementaRoupa(int quantidade) {
         if (quantidade > 0) {
             this.quantidade = this.quantidade + quantidade;
         } else {
@@ -39,14 +34,13 @@ public class Livro{
         return valorTotal;
     }
 
-
-    @Override
     public String toString() {
-        return "Livro:" +
-                " titulo: " + titulo +
-                "\n       autor: " + autor +
+        return "Peça:" +
+                " marca: " + marca +
+                "\n       tipo: " + tipo +
                 "\n       quantidade: " + quantidade +
                 "\n       valor: R$" + valor +
                 "\n      valorTotal: " + valorTotal();
     }
 }
+
