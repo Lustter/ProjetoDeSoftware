@@ -19,26 +19,6 @@ public class Main {
 
             System.out.println(conta.toString());
 
-            <dependencies>
-                    <!-- MySQL Connector/J -->
-                    <dependency>
-                    <groupId>mysql</groupId>
-                    <artifactId>mysql-connector-java</artifactId>
-                    <version>8.0.33</version>
-                    </dependency>
-                    </dependencies>
-
-                    CREATE DATABASE teste;
-
-            USE teste;
-
-            CREATE TABLE pagamentos (
-                    id INT AUTO_INCREMENT PRIMARY KEY,
-                    nomeCliente VARCHAR(100),
-                    valor DECIMAL(10,2),
-                    data DATE
-            );
-
 
         }
     }
