@@ -47,6 +47,6 @@ public class Livro{
                 "\n       autor: " + autor +
                 "\n       quantidade: " + quantidade +
                 "\n       valor: R$" + valor +
-                "\n      valorTotal: " + valorTotal();
+                "\n       valorTotal: " + valorTotal();
     }
 }
