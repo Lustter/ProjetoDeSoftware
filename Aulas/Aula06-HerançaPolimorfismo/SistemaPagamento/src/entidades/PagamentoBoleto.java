@@ -1,6 +1,7 @@
 package entidades;
 
 public class PagamentoBoleto extends Pagamento {
+
     //atributos
 
     private String codigoBarras;
@@ -21,9 +22,9 @@ public class PagamentoBoleto extends Pagamento {
     @Override
     public String toString() {
         return "Pagamento: " +
-                "\nNome do Cliente: " + getNomeCliente() + " | | " +
-                "Valor de Pagamento: " + getValorPagamento() + " | | " +
-                "Data do Pagamento: " + getDataPagamento() + " | | " +
+                "\nNome do Cliente: " + getnomeCliente() + " | | " +
+                "Valor de Pagamento: " + getvalorPagamento() + " | | " +
+                "Data do Pagamento: " + getdataPagamento() + " | | " +
                 "Codigo de Barras: " + codigoBarras;
     }
 

@@ -1,6 +1,7 @@
 package entidades;
 
 public class PagamentoCartao extends Pagamento {
+
     //atributos
 
     private String NumCartao;
